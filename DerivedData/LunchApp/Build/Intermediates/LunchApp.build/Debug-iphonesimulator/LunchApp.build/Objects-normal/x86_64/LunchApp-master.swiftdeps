@@ -1,0 +1,13 @@
+version: "Apple Swift version 1.2 (swiftlang-602.0.53.1 clang-602.0.53)"
+options: "b2b277ae6eb7d0efd04c1bbd88cc85bd"
+inputs: 
+- "/Users/hide/Documents/iosDev/\u52C9\u5F37\u4F1A/\u30B3\u30FC\u30C8\u3099/LearningSource/LunchApp/SettingConfig.swift"
+- "/Users/hide/Documents/iosDev/\u52C9\u5F37\u4F1A/\u30B3\u30FC\u30C8\u3099/LearningSource/LunchApp/MenuNavCollectionView.swift"
+- "/Users/hide/Documents/iosDev/\u52C9\u5F37\u4F1A/\u30B3\u30FC\u30C8\u3099/LearningSource/LunchApp/ContentCollectionCell.swift"
+- "/Users/hide/Documents/iosDev/\u52C9\u5F37\u4F1A/\u30B3\u30FC\u30C8\u3099/LearningSource/LunchApp/MenuNavCollectionCell.swift"
+- "/Users/hide/Documents/iosDev/\u52C9\u5F37\u4F1A/\u30B3\u30FC\u30C8\u3099/LearningSource/LunchApp/ContentCollectionDataSource.swift"
+- "/Users/hide/Documents/iosDev/\u52C9\u5F37\u4F1A/\u30B3\u30FC\u30C8\u3099/LearningSource/LunchApp/MenuNavCollectionDataSource.swift"
+- "/Users/hide/Documents/iosDev/\u52C9\u5F37\u4F1A/\u30B3\u30FC\u30C8\u3099/LearningSource/LunchApp/ViewController.swift"
+- "/Users/hide/Documents/iosDev/\u52C9\u5F37\u4F1A/\u30B3\u30FC\u30C8\u3099/LearningSource/LunchApp/DetailViewController.swift"
+- "/Users/hide/Documents/iosDev/\u52C9\u5F37\u4F1A/\u30B3\u30FC\u30C8\u3099/LearningSource/LunchApp/AppDelegate.swift"
+- "/Users/hide/Documents/iosDev/\u52C9\u5F37\u4F1A/\u30B3\u30FC\u30C8\u3099/LearningSource/LunchApp/ContentCollectionView.swift"

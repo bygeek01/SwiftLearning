@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vj7-4R-tD8">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Z9E-wk-k16">
+            <objects>
+                <navigationController id="vj7-4R-tD8" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FvT-OT-1hI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="yy5-5f-Fye" kind="relationship" relationship="rootViewController" id="xxC-Jd-j1N"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BV7-GQ-1XW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-906" y="-654"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="OPR-po-p7g">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="yy5-5f-Fye" customClass="ViewController" customModule="LunchApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eL7-og-4Ai"/>
+                        <viewControllerLayoutGuide type="bottom" id="EGY-G4-RfU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rs0-TJ-5yY">
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Snq-F2-nSh" userLabel="ContentCollection" customClass="ContentCollectionView" customModule="LunchApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="114" width="600" height="486"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="DSL-7U-bGO">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="contentCollectionCell" id="evA-2B-uR5" userLabel="ContentCell" customClass="ContentCollectionCell" customModule="LunchApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="UoD-1Z-Uhc" id="H5v-9e-jnk"/>
+                                    <outlet property="delegate" destination="yy5-5f-Fye" id="uxi-l0-f1o"/>
+                                </connections>
+                            </collectionView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="NZt-yi-6rO" userLabel="MenuNavCollection" customClass="MenuNavCollectionView" customModule="LunchApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="600" height="50"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="78L-we-Lvl"/>
+                                    <constraint firstAttribute="width" secondItem="NZt-yi-6rO" secondAttribute="height" multiplier="12:1" id="j8I-Gr-ikc"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PNx-Z8-fYW">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="menuNavCell" id="Hvi-dO-dpp" userLabel="MenuNavCell" customClass="MenuNavCollectionCell" customModule="LunchApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qEl-xv-7rf">
+                                                    <rect key="frame" x="4" y="15" width="42" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="centerY" secondItem="qEl-xv-7rf" secondAttribute="centerY" id="MC5-cP-sc0"/>
+                                            <constraint firstAttribute="centerX" secondItem="qEl-xv-7rf" secondAttribute="centerX" id="YMJ-4I-mfg"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="menuNavLabel" destination="qEl-xv-7rf" id="lIV-MK-fxo"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="78L-we-Lvl"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="Iqs-2H-5Xh" id="dvD-dg-3UY"/>
+                                    <outlet property="delegate" destination="yy5-5f-Fye" id="7tC-OR-1Yb"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NZt-yi-6rO" firstAttribute="top" secondItem="eL7-og-4Ai" secondAttribute="bottom" id="HqA-r9-UoS"/>
+                            <constraint firstItem="Snq-F2-nSh" firstAttribute="leading" secondItem="Rs0-TJ-5yY" secondAttribute="leading" id="SvB-JP-re7"/>
+                            <constraint firstAttribute="trailing" secondItem="Snq-F2-nSh" secondAttribute="trailing" id="VrI-lI-20g"/>
+                            <constraint firstItem="EGY-G4-RfU" firstAttribute="top" secondItem="Snq-F2-nSh" secondAttribute="bottom" id="kAd-LL-RIj"/>
+                            <constraint firstItem="Snq-F2-nSh" firstAttribute="top" secondItem="NZt-yi-6rO" secondAttribute="bottom" id="qjp-rw-2xz"/>
+                            <constraint firstAttribute="trailing" secondItem="NZt-yi-6rO" secondAttribute="trailing" id="yZ8-nC-gDJ"/>
+                            <constraint firstItem="NZt-yi-6rO" firstAttribute="leading" secondItem="Rs0-TJ-5yY" secondAttribute="leading" id="yly-iI-03e"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="Zwk-gb-la8"/>
+                    <connections>
+                        <outlet property="contentCollectionView" destination="Snq-F2-nSh" id="htP-wR-S2m"/>
+                        <outlet property="menuNavCollectionView" destination="NZt-yi-6rO" id="Abg-hw-ozD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qi3-I3-JNG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="Iqs-2H-5Xh" customClass="MenuNavCollectionDataSource" customModule="LunchApp" customModuleProvider="target"/>
+                <customObject id="UoD-1Z-Uhc" customClass="ContentCollectionDataSource" customModule="LunchApp" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="-155" y="-654"/>
+        </scene>
+    </scenes>
+</document>
