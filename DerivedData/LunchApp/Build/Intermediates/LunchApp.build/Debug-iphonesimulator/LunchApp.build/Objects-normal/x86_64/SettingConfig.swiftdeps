@@ -11,8 +11,8 @@ member-access:
 - "VSC6CGRect"
 - "PSs9AnyObject"
 - "C8LunchApp13SettingConfig"
-- "CSo8NSObject"
 - "CSo8UIScreen"
+- "CSo8NSObject"
 dynamic-lookup:
 cross-module:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Swift.swiftmodule"

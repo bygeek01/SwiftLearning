@@ -6,18 +6,18 @@ nominals:
 class-members:
 - "menuNavLabel"
 top-level:
-- "CGRect"
 - "NSCoder"
 - "UICollectionViewCell"
+- "CGRect"
 - "UILabel"
 member-access:
+- "CSo11UIResponder"
+- "CSo24UICollectionReusableView"
+- "PSs9AnyObject"
+- "CSo8NSObject"
+- "C8LunchApp21MenuNavCollectionCell"
 - "CSo6UIView"
 - "CSo20UICollectionViewCell"
-- "C8LunchApp21MenuNavCollectionCell"
-- "CSo11UIResponder"
-- "PSs9AnyObject"
-- "CSo24UICollectionReusableView"
-- "CSo8NSObject"
 dynamic-lookup:
 cross-module:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Swift.swiftmodule"

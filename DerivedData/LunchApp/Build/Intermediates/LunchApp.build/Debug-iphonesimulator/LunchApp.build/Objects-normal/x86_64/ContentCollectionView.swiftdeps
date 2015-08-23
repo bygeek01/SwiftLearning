@@ -5,23 +5,23 @@ nominals:
 - "C8LunchApp21ContentCollectionView"
 class-members:
 top-level:
-- "CGRect"
 - !private "UINib"
-- "NSCoder"
-- !private "StringLiteralType"
 - "UICollectionView"
+- "CGRect"
 - !private "NSBundle"
+- !private "StringLiteralType"
+- "NSCoder"
 - "UICollectionViewLayout"
 member-access:
-- "CSo8NSObject"
-- "PSs9AnyObject"
-- "CSo16UICollectionView"
-- !private "CSo8NSBundle"
-- "CSo11UIResponder"
-- "CSo12UIScrollView"
-- !private "CSo5UINib"
 - "C8LunchApp21ContentCollectionView"
+- "CSo11UIResponder"
+- "CSo16UICollectionView"
+- !private "CSo5UINib"
+- "CSo8NSObject"
 - "CSo6UIView"
+- "PSs9AnyObject"
+- !private "CSo8NSBundle"
+- "CSo12UIScrollView"
 dynamic-lookup:
 cross-module:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Swift.swiftmodule"

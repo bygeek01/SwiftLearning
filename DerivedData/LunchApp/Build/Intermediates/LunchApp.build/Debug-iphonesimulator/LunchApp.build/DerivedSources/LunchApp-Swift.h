@@ -141,14 +141,26 @@ SWIFT_CLASS("_TtC8LunchApp21ContentCollectionView")
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class ShopContentTableView;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC8LunchApp20DetailViewController")
 @interface DetailViewController : UIViewController
+@property (nonatomic, weak) IBOutlet ShopContentTableView * __null_unspecified shopContentTableView;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (BOOL)prefersStatusBarHidden;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC8LunchApp13MenuImageCell")
+@interface MenuImageCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified menuImageView;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * __nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -171,22 +183,88 @@ SWIFT_CLASS("_TtC8LunchApp27MenuNavCollectionDataSource")
 
 
 SWIFT_CLASS("_TtC8LunchApp21MenuNavCollectionView")
-@interface MenuNavCollectionView : UICollectionView
+@interface MenuNavCollectionView : UICollectionView <UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout * __nonnull)layout OBJC_DESIGNATED_INITIALIZER;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)layoutSubviews;
 - (void)centreIfNeeded;
+- (CGSize)collectionView:(UICollectionView * __nonnull)collectionView layout:(UICollectionViewLayout * __nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (void)collectionView:(UICollectionView * __nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+@end
+
+@class UITableView;
+
+SWIFT_CLASS("_TtC8LunchApp26ShopContentTableDataSource")
+@interface ShopContentTableDataSource : NSObject <UITableViewDataSource>
+- (SWIFT_NULLABILITY(nonnull) instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * __nonnull)tableView;
+- (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+@end
+
+
+SWIFT_CLASS("_TtC8LunchApp20ShopContentTableView")
+@interface ShopContentTableView : UITableView <UITableViewDelegate>
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithFrame:(CGRect)frame style:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (CGFloat)tableView:(UITableView * __nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+@end
+
+
+SWIFT_CLASS("_TtC8LunchApp12ShopInfoCell")
+@interface ShopInfoCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified shopNameLabel;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified descriptionLabel;
+@property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified openIcon;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified openLabel;
+@property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified closeIcon;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified closeLabel;
+@property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified tellIcon;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified tellLabel;
+@property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified starIcon;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified starLabel;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * __nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class MKMapView;
+@class UIButton;
+
+SWIFT_CLASS("_TtC8LunchApp11ShopMapCell")
+@interface ShopMapCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet MKMapView * __null_unspecified mapView;
+@property (nonatomic, weak) IBOutlet UIView * __null_unspecified coverView;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified addressLabel;
+@property (nonatomic, weak) IBOutlet UIButton * __null_unspecified copyButton;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * __nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC8LunchApp11SnsIconCell")
+@interface SnsIconCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UIButton * __null_unspecified twitterButton;
+@property (nonatomic, weak) IBOutlet UIButton * __null_unspecified facebookButton;
+@property (nonatomic, weak) IBOutlet UIButton * __null_unspecified lineButton;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * __nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
 SWIFT_CLASS("_TtC8LunchApp14ViewController")
-@interface ViewController : UIViewController <UICollectionViewDelegateFlowLayout, UICollectionViewDelegate>
+@interface ViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 @property (nonatomic, weak) IBOutlet MenuNavCollectionView * __null_unspecified menuNavCollectionView;
 @property (nonatomic, weak) IBOutlet ContentCollectionView * __null_unspecified contentCollectionView;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
-- (CGSize)collectionView:(UICollectionView * __nonnull)collectionView layout:(UICollectionViewLayout * __nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (void)collectionView:(UICollectionView * __nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (CGSize)collectionView:(UICollectionView * __nonnull)collectionView layout:(UICollectionViewLayout * __nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

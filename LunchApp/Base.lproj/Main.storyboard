@@ -40,7 +40,7 @@
                         <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Snq-F2-nSh" userLabel="ContentCollection" customClass="ContentCollectionView" customModule="LunchApp" customModuleProvider="target">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Snq-F2-nSh" userLabel="ContentCollection" customClass="ContentCollectionView" customModule="LunchApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="114" width="600" height="486"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="DSL-7U-bGO">
@@ -61,11 +61,10 @@
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
-                                    <outlet property="dataSource" destination="UoD-1Z-Uhc" id="H5v-9e-jnk"/>
-                                    <outlet property="delegate" destination="yy5-5f-Fye" id="uxi-l0-f1o"/>
+                                    <outlet property="dataSource" destination="s38-j5-tWm" id="emI-px-1bU"/>
                                 </connections>
                             </collectionView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="NZt-yi-6rO" userLabel="MenuNavCollection" customClass="MenuNavCollectionView" customModule="LunchApp" customModuleProvider="target">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="NZt-yi-6rO" userLabel="MenuNavCollection" customClass="MenuNavCollectionView" customModule="LunchApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="64" width="600" height="50"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -87,9 +86,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qEl-xv-7rf">
-                                                    <rect key="frame" x="4" y="15" width="42" height="20.5"/>
+                                                    <rect key="frame" x="4" y="15" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </label>
                                             </subviews>
@@ -111,8 +110,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <outlet property="dataSource" destination="Iqs-2H-5Xh" id="dvD-dg-3UY"/>
-                                    <outlet property="delegate" destination="yy5-5f-Fye" id="7tC-OR-1Yb"/>
+                                    <outlet property="dataSource" destination="MTj-mC-tBr" id="y1r-T9-pVX"/>
                                 </connections>
                             </collectionView>
                         </subviews>
@@ -140,8 +138,8 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qi3-I3-JNG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="Iqs-2H-5Xh" customClass="MenuNavCollectionDataSource" customModule="LunchApp" customModuleProvider="target"/>
-                <customObject id="UoD-1Z-Uhc" customClass="ContentCollectionDataSource" customModule="LunchApp" customModuleProvider="target"/>
+                <customObject id="MTj-mC-tBr" customClass="MenuNavCollectionDataSource" customModule="LunchApp" customModuleProvider="target"/>
+                <customObject id="s38-j5-tWm" customClass="ContentCollectionDataSource" customModule="LunchApp" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="-155" y="-654"/>
         </scene>

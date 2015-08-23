@@ -21,6 +21,16 @@ class ContentCollectionView: UICollectionView {
         super.registerNib(nib, forCellWithReuseIdentifier: "contentCollectionCell")
     }
     
+    //menucellのサイズを画面高/5に設定する
+//    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+//        println("\(collectionView.frame):collection.frame")
+//        let cellSize = CGSize(width: collectionView.frame.width, height: collectionView.frame.height/5)
+//        return cellSize
+//    }
+    
+
+    
+    
 
     
 }

@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		084A472F1B849313004AFFC5 /* ShopContentTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084A472E1B849313004AFFC5 /* ShopContentTableView.swift */; };
+		084A47311B84932B004AFFC5 /* ShopInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084A47301B84932B004AFFC5 /* ShopInfoCell.swift */; };
+		084A47341B84935B004AFFC5 /* ShopContentTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084A47331B84935B004AFFC5 /* ShopContentTableDataSource.swift */; };
+		084A47371B84959F004AFFC5 /* ShopMapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084A47351B84959F004AFFC5 /* ShopMapCell.swift */; };
+		084A47381B84959F004AFFC5 /* ShopMapCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 084A47361B84959F004AFFC5 /* ShopMapCell.xib */; };
+		084A473A1B8495F4004AFFC5 /* ShopInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 084A47391B8495F4004AFFC5 /* ShopInfoCell.xib */; };
+		084A473C1B84CD64004AFFC5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 084A473B1B84CD64004AFFC5 /* MapKit.framework */; };
+		084A473F1B84E0C6004AFFC5 /* MenuImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084A473D1B84E0C6004AFFC5 /* MenuImageCell.swift */; };
+		084A47401B84E0C6004AFFC5 /* MenuImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 084A473E1B84E0C6004AFFC5 /* MenuImageCell.xib */; };
+		084A47431B84E52F004AFFC5 /* SnsIconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084A47411B84E52F004AFFC5 /* SnsIconCell.swift */; };
+		084A47441B84E52F004AFFC5 /* SnsIconCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 084A47421B84E52F004AFFC5 /* SnsIconCell.xib */; };
 		084F7ACE1B81C64B001529DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084F7ACD1B81C64B001529DA /* AppDelegate.swift */; };
 		084F7AD01B81C64B001529DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084F7ACF1B81C64B001529DA /* ViewController.swift */; };
 		084F7AD31B81C64B001529DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 084F7AD11B81C64B001529DA /* Main.storyboard */; };
@@ -36,6 +47,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		084A472E1B849313004AFFC5 /* ShopContentTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopContentTableView.swift; sourceTree = "<group>"; };
+		084A47301B84932B004AFFC5 /* ShopInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopInfoCell.swift; sourceTree = "<group>"; };
+		084A47331B84935B004AFFC5 /* ShopContentTableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopContentTableDataSource.swift; sourceTree = "<group>"; };
+		084A47351B84959F004AFFC5 /* ShopMapCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopMapCell.swift; sourceTree = "<group>"; };
+		084A47361B84959F004AFFC5 /* ShopMapCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShopMapCell.xib; sourceTree = "<group>"; };
+		084A47391B8495F4004AFFC5 /* ShopInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShopInfoCell.xib; sourceTree = "<group>"; };
+		084A473B1B84CD64004AFFC5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		084A473D1B84E0C6004AFFC5 /* MenuImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuImageCell.swift; sourceTree = "<group>"; };
+		084A473E1B84E0C6004AFFC5 /* MenuImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuImageCell.xib; sourceTree = "<group>"; };
+		084A47411B84E52F004AFFC5 /* SnsIconCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnsIconCell.swift; sourceTree = "<group>"; };
+		084A47421B84E52F004AFFC5 /* SnsIconCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SnsIconCell.xib; sourceTree = "<group>"; };
 		084F7AC81B81C64B001529DA /* LunchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LunchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		084F7ACC1B81C64B001529DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		084F7ACD1B81C64B001529DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				084A473C1B84CD64004AFFC5 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,9 +99,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		084A472B1B848FEE004AFFC5 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				084F7AD41B81C64B001529DA /* Images.xcassets */,
+				084F7AD61B81C64B001529DA /* LaunchScreen.xib */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		084A472C1B848FFB004AFFC5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		084A472D1B8492DF004AFFC5 /* ShopContentTable */ = {
+			isa = PBXGroup;
+			children = (
+				084A472E1B849313004AFFC5 /* ShopContentTableView.swift */,
+				084A473D1B84E0C6004AFFC5 /* MenuImageCell.swift */,
+				084A473E1B84E0C6004AFFC5 /* MenuImageCell.xib */,
+				084A47301B84932B004AFFC5 /* ShopInfoCell.swift */,
+				084A47391B8495F4004AFFC5 /* ShopInfoCell.xib */,
+				084A47351B84959F004AFFC5 /* ShopMapCell.swift */,
+				084A47361B84959F004AFFC5 /* ShopMapCell.xib */,
+				084A47411B84E52F004AFFC5 /* SnsIconCell.swift */,
+				084A47421B84E52F004AFFC5 /* SnsIconCell.xib */,
+			);
+			name = ShopContentTable;
+			sourceTree = "<group>";
+		};
+		084A47321B849340004AFFC5 /* Deital */ = {
+			isa = PBXGroup;
+			children = (
+				084A47331B84935B004AFFC5 /* ShopContentTableDataSource.swift */,
+			);
+			name = Deital;
+			sourceTree = "<group>";
+		};
 		084F7ABF1B81C64B001529DA = {
 			isa = PBXGroup;
 			children = (
+				084A473B1B84CD64004AFFC5 /* MapKit.framework */,
 				084F7ACA1B81C64B001529DA /* LunchApp */,
 				084F7AE01B81C64B001529DA /* LunchAppTests */,
 				084F7AC91B81C64B001529DA /* Products */,
@@ -99,7 +163,6 @@
 			children = (
 				084F7AF21B81CBE4001529DA /* Sources */,
 				084F7AF31B81CC03001529DA /* Resources */,
-				084F7ACB1B81C64B001529DA /* Supporting Files */,
 			);
 			path = LunchApp;
 			sourceTree = "<group>";
@@ -135,6 +198,7 @@
 				084F7ACD1B81C64B001529DA /* AppDelegate.swift */,
 				084F7AFE1B81F6F3001529DA /* SettingConfig.swift */,
 				084F7AFB1B81F284001529DA /* MainScreen */,
+				084A47321B849340004AFFC5 /* Deital */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -160,9 +224,9 @@
 		084F7AF21B81CBE4001529DA /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				084F7AED1B81C810001529DA /* Model */,
-				084F7AEE1B81C82C001529DA /* Views */,
 				084F7AF01B81CB5F001529DA /* Controllers */,
+				084F7AEE1B81C82C001529DA /* Views */,
+				084F7AED1B81C810001529DA /* Model */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -170,8 +234,9 @@
 		084F7AF31B81CC03001529DA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				084F7AD41B81C64B001529DA /* Images.xcassets */,
-				084F7AD61B81C64B001529DA /* LaunchScreen.xib */,
+				084A472C1B848FFB004AFFC5 /* Fonts */,
+				084A472B1B848FEE004AFFC5 /* Images */,
+				084F7ACB1B81C64B001529DA /* Supporting Files */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -190,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				08DDE3701B83FC8F0005F143 /* Detail.storyboard */,
+				084A472D1B8492DF004AFFC5 /* ShopContentTable */,
 			);
 			name = Detail;
 			sourceTree = "<group>";
@@ -302,10 +368,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				084A47441B84E52F004AFFC5 /* SnsIconCell.xib in Resources */,
 				084F7AD31B81C64B001529DA /* Main.storyboard in Resources */,
 				084F7AD81B81C64B001529DA /* LaunchScreen.xib in Resources */,
+				084A47401B84E0C6004AFFC5 /* MenuImageCell.xib in Resources */,
+				084A473A1B8495F4004AFFC5 /* ShopInfoCell.xib in Resources */,
 				084F7AD51B81C64B001529DA /* Images.xcassets in Resources */,
 				08DDE3711B83FC8F0005F143 /* Detail.storyboard in Resources */,
+				084A47381B84959F004AFFC5 /* ShopMapCell.xib in Resources */,
 				084F7B0D1B82F633001529DA /* ContentCollectionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,11 +395,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				084F7AFF1B81F6F3001529DA /* SettingConfig.swift in Sources */,
+				084A473F1B84E0C6004AFFC5 /* MenuImageCell.swift in Sources */,
+				084A47311B84932B004AFFC5 /* ShopInfoCell.swift in Sources */,
 				084F7B011B821447001529DA /* MenuNavCollectionView.swift in Sources */,
 				084F7B071B82F374001529DA /* ContentCollectionCell.swift in Sources */,
+				084A47341B84935B004AFFC5 /* ShopContentTableDataSource.swift in Sources */,
 				084F7AFD1B81F3AF001529DA /* MenuNavCollectionCell.swift in Sources */,
+				084A47371B84959F004AFFC5 /* ShopMapCell.swift in Sources */,
 				084F7B051B82F2DE001529DA /* ContentCollectionDataSource.swift in Sources */,
+				084A47431B84E52F004AFFC5 /* SnsIconCell.swift in Sources */,
 				084F7AF81B81D35F001529DA /* MenuNavCollectionDataSource.swift in Sources */,
+				084A472F1B849313004AFFC5 /* ShopContentTableView.swift in Sources */,
 				084F7AD01B81C64B001529DA /* ViewController.swift in Sources */,
 				08D064431B841F3E00BAE9A1 /* DetailViewController.swift in Sources */,
 				084F7ACE1B81C64B001529DA /* AppDelegate.swift in Sources */,

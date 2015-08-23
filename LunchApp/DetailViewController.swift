@@ -10,6 +10,9 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet weak var shopContentTableView: ShopContentTableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //navigationを背景透明に設定

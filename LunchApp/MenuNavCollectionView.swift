@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MenuNavCollectionView: UICollectionView {
+class MenuNavCollectionView: UICollectionView,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout {
     
     override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
         super.init(frame: frame, collectionViewLayout: layout)
@@ -17,6 +17,7 @@ class MenuNavCollectionView: UICollectionView {
     //StoryBoard使用時の初期化処理
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        self.delegate = self
     }
     
     override func layoutSubviews() {
@@ -30,15 +31,24 @@ class MenuNavCollectionView: UICollectionView {
         let contentWidth          = contentSize.width
         let centerOffsetX:CGFloat = (contentWidth - bounds.size.width)/2
         let distFromCentre        = Float(centerOffsetX-currentOffset.x)
-        
-//        println("currntOffset:\(currentOffset)")
-//        println("centerOffsetX:\(centerOffsetX)")
-//        println("distFromCentre:\(fabsf(distFromCentre))")
-        
+                
         if fabsf(distFromCentre) > Float(contentWidth/4) {
             contentOffset = CGPoint(x: centerOffsetX, y: currentOffset.y)
             reloadData()
         }
     }
+    
+    //menucellのサイズを画面幅/3に設定する
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        let cellSize = CGSize(width: collectionView.frame.width/3, height: collectionView.frame.height)
+        return cellSize
+    }
+    
+    //cellタップ時の処理
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        println("tapSetion:\(indexPath.section)")
+    }
+    
+    
     
 }

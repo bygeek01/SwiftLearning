@@ -4,20 +4,20 @@ provides:
 nominals:
 - "C13LunchAppTests13LunchAppTests"
 class-members:
-- "setUp"
-- "testPerformanceExample"
-- "testExample"
 - "tearDown"
+- "testPerformanceExample"
+- "setUp"
+- "testExample"
 top-level:
+- "XCTestCase"
 - !private "StringLiteralType"
 - !private "XCTAssert"
 - !private "BooleanLiteralType"
-- "XCTestCase"
 member-access:
-- "CSo8NSObject"
 - "PSs9AnyObject"
-- "CSo10XCTestCase"
 - !private "C13LunchAppTests13LunchAppTests"
+- "CSo8NSObject"
+- "CSo10XCTestCase"
 - "CSo6XCTest"
 dynamic-lookup:
 cross-module:
